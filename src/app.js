@@ -1,13 +1,18 @@
 import "./css/style.css";
 import "./css/stars.css"
 import 'babel-polyfill';
-import $ from 'jquery';
+import jQuery from 'jquery';
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import Barba from "barba.js";
 import inView from "in-view"
 
-$('link[rel=stylesheet][href*="bin/default.css"]').remove();
+jQuery('link[rel=stylesheet][href*="bin/default.css"]').remove();
+
+jQuery('.work-instance').click(function(){
+    console.log(jQuery(this).children())
+//    jQuery(this).children("p.work").addClass('active');
+});
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   var lastElementClicked;
